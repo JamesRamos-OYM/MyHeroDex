@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pf_fondo_buscar"
+    android:padding="16dp">
+
+    <!-- Overlay semitransparente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/overlay_background"
+        android:padding="20dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR SUPERHÉROES"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- Contenedor de búsqueda -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/search_background"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/edt_buscar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Buscar superhéroe..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark"
+                android:padding="12dp"
+                android:background="@android:color/transparent"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="12dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch" />
+
+            <ImageButton
+                android:id="@+id/btn_buscar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/search_button_background"
+                android:src="@drawable/ic_search_button"
+                android:contentDescription="Buscar"
+                android:layout_margin="2dp"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+        <!-- Texto de resultados -->
+        <TextView
+            android:id="@+id/txt_resultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultados de búsqueda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_heroes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

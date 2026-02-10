@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_foreground"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_solicitar"
+        android:icon="@drawable/ic_solicitar_foreground"
+        android:title="Solicitar"/>
+    <item
+        android:id="@+id/nav_comics"
+        android:icon="@drawable/ic_comics_foreground"
+        android:title="Comics"/>
+    <item
+        android:id="@+id/nav_config"
+        android:icon="@drawable/ic_config_foreground"
+        android:title="Configuración"/>
+</menu>

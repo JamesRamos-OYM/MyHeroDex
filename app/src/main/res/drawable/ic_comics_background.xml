@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorOnSurface">
+
+    <!-- Fondo del comic (libro cerrado) -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M4,6H20V18H4V6Z"
+        android:strokeWidth="1"
+        android:strokeColor="#FFD700"/>
+
+    <!-- Líneas del lomo del comic -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M6,6V18M8,6V18"
+        android:strokeWidth="0.8"
+        android:strokeColor="#E53935"/>
+
+    <!-- Páginas internas (efecto de grosor) -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M5,7H19V17H5V7Z"/>
+
+    <!-- Texto/líneas del comic -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M7,9H17V10H7V9Z"/>
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M7,11H15V12H7V11Z"/>
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M7,13H16V14H7V13Z"/>
+
+    <!-- Globo de diálogo pequeño (característico de comics) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M12,15C13.1,15 14,15.9 14,17C14,18.1 13.1,19 12,19C10.9,19 10,18.1 10,17C10,15.9 10.9,15 12,15Z"/>
+
+    <!-- Cola del globo -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M11,17L10,19L12,18Z"/>
+
+</vector>

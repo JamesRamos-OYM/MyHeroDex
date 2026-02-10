@@ -1,0 +1,15 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_light">#B0BEC5</color>
+    <color name="grey_dark">#263238</color>
+    <color name="primary_red">#E23636</color>
+    <color name="secondary_red">#B71C1C</color>
+    <color name="background_marvel">#1A1A1A</color>
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="button_background">#E23636</color>
+    <color name="image_placeholder">#37474F</color>
+
+
+</resources>
